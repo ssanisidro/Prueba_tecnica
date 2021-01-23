@@ -24,8 +24,8 @@ pagina y límite, tal y como se indica en el enunciado.
 En este caso hemos hecho una serie de condicionales por si se introducen o no estos parámetros. Al estar la api de origen limitada a 20 resultados para obtener más he optado
 por crear bucles y crear una variable auxiliar que me diga el número de veces en los que hay que hacer dichos bucles para obtener los resultados. 
 
-En esta prueba soy consciente de que no está bien realmente ya que mi código está limitado en cuando al parámetro página. Creo que se solucionaría implementando una especie
-de serie fibonnaci pero no estoy seguro. Para el ejercicio me he limitado a hacer manualmente los casos en los que la página es 1 o 2. Lo indico en el código.
+Soy consciente de que mi código está limitado en cuando al parámetro página. Creo que se solucionaría implementando la serie fibonnaci.
+Para el ejercicio me he limitado a hacer manualmente los casos en los que la página es 1 o 2. Lo indico en el código.
 
 En el endpoint users, recogemos con un req.query tanto si hay página como límite y los pasamos como parámetro de la función creada anteriormente(usuarios(x,x)).
 
@@ -37,16 +37,14 @@ Para esta prueba he optado por crear bucles para recoger en alguna variable toda
 Entonces estas funciones devuelven en el endpoint el usuario que corresponde al id por un lado y ,por otro, sus posts. Después lo juntamos en la variable resultados y lo mostramos.
 
 En esta prueba he de comentar una cosa: En la función users tengo el siguiente comentario: // let paginas=usersData.meta.pagination.pages;
-La variable páginas recoge las páginas que nos indica gorest.co.in que tiene de usuarios que creo que es como debería ser. Entonces el bucle debería hacerse el número de paginas
-que hay para así recoger todos los usuarios. El caso es que si lo dejo así, el localhost a mi se me peta y no me carga.
+La variable páginas recoge las páginas que nos indica gorest.co.in que tiene de usuarios. Entonces el bucle debería repetirse el número de paginas
+que existen para así recoger todos los usuarios. El caso es que si lo dejo así, el localhost a mi se me peta y no me carga.
 
-He puesto esta variable como 10 y entonces funciona para los usuarios cuyo id está entre esas páginas. No se si hay otra forma de optimizarlo la verdad.
+He puesto esta variable como 10 y entonces funciona para los usuarios cuyo id está entre esas páginas.
 
 
 Pues con esto ya estaría la prueba lista. Espero que os guste y podamos comentar la prueba en otra entrevista y conocernos mejor. Me hace mucha ilusión poder trabajar 
 y desarrollarme profesionalmente con vosotras.
-
-PD: en el código tengo una mezcla entre castellano e inglés en los nombres de las variables, hay ratos que me flipo y otros en los que soy más práctico jajja
 
 Muchas gracias de antemano y hablamos pronto.
 
