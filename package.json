@@ -1,0 +1,23 @@
+{
+  "name": "prueba_tecnica",
+  "version": "1.0.0",
+  "description": "3 ejercicios técnicos para conocer al fantástico nuevo compañero de Enthec",
+  "main": "prueba1.js",
+  "scripts": {
+    "dev": "nodemon prueba1.js"
+  },
+  "keywords": [],
+  "author": "Sergio Sanisidro García",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.5",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0",
+    "node-fetch": "^2.6.1",
+    "request": "^2.88.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
